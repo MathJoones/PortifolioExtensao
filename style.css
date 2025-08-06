@@ -1,8 +1,57 @@
-body {
-    background: #00305c;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
 }
 
-h1 {
-    color: #fff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+body {
+    background: #00305c;
+    height: 300vh;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 5%;
+    margin: 0;
+    background-color: #0ff;
+    display: flex;
+    justify-content: space-around;
+}
+
+header img {
+    height: 100px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.introducao {
+    width: 80%;
+    text-align: center;
+}
+
+.integrantes {
+    width: 80%;
+    text-align: center;
 }
