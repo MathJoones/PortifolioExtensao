@@ -70,8 +70,25 @@ p {
 }
 
 .cards {
-    background-color: #0af;
+    display: inline-block;
+    background-color: #303030;
+    outline: 3px solid #e5e5e5;
     margin: 5vh;
     height: 30vh;
     width: 25vh;
+}
+
+.cards img {
+    height: 22vh;
+}
+
+.cards a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cards a img{
+    height: 26px;
+    margin-bottom: -7px;
 }
