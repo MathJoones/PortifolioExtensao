@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="public/logoUniFIl.ico" type="image/x-icon">
+    <script src="script.js"></script>
     <title>Portifólio</title>
 </head>
 <body>
@@ -15,10 +16,20 @@
 
         <div class="header-nav">
             <nav>
-                <a href="#introducao">Introdução</a>
-                <a href="#comunidade">Comunidade</a>
-                <a href="#reflexao">Reflexão</a>
-                <a href="#membros">Integrantes</a>
+                <ul id="navbar">
+                    <li><a href="#introducao">Introdução</a></li>
+                    <li><a href="#comunidade">Comunidade</a></li>
+                    <li><a href="#reflexao">Reflexão</a></li>
+                    <li><a href="#membros">Integrantes</a></li>
+                    <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+                <ul id="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="#introducao">Introdução</a></li>
+                    <li><a href="#comunidade">Comunidade</a></li>
+                    <li><a href="#reflexao">Reflexão</a></li>
+                    <li><a href="#membros">Integrantes</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -27,13 +38,13 @@
         <div class="main-container">
             <div id="introducao">
                 <h1>Introdução</h1>
-                <p><strong>placeholder: Training Ground</strong> é um projeto de extensão currícular que consiste em um jogo roguelite 2D de visão Top-Down (de cima para baixo), inspirado em jogos como "Vampire Survivor", "Undertale" e "Touhou". O principal objetivo do jogo consiste no protagonista sendo desafiado a escalar uma torre cheia de inimigos para ficar mais forte conforme alcança novos andares.
+                <p><strong>Hayato: Training Ground</strong> é um projeto de extensão currícular que consiste em um jogo roguelite 2D de visão Top-Down (de cima para baixo), inspirado em jogos como "Vampire Survivor", "Undertale" e "Touhou". O principal objetivo do jogo consiste no protagonista sendo desafiado a escalar uma torre cheia de inimigos para ficar mais forte conforme alcança novos andares.
                 </p>
             </div>
 
             <div id="extensao">
                 <h1>O que é Extensão Curricular?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam illum quaerat doloremque sequi repellendus voluptatem blanditiis accusantium at inventore amet facere provident, quo, rerum pariatur quasi ipsum sit, unde quos.
+                <p>De acordo com a Resolução nº 7, de 18 de Dezembro de 2018, do Conselho Nacional de Educação, a Extensão Currícular é uma complementação, onde os estudantes devem planejar e desenvolver um projeto cujo objetivo seja enriquecer a formação dos alunos com experiências práticas junto a interação com uma sociedade externa.
                 </p>
             </div>
             
@@ -60,7 +71,7 @@
 
             <div class="integrantes">
                 <h1>Integrantes</h1>
-                Somos a equipe <strong>placeholder</strong>, composta por estudantes da Universidade Filadelfia de Londrina (UniFil).
+                <p>Somos a equipe <strong>placeholder</strong>, composta por estudantes da Universidade Filadélfia de Londrina (UniFil).</p>
             </div>
 
             <div id="membros">
@@ -96,12 +107,9 @@
                 </div>
             </div>
         </div>
-        <div id="banner">
-        </div>
     </main>
     
     <footer>
-        <a href="">Voltar para o topo</a>
     </footer>
 </body>
 </html>
