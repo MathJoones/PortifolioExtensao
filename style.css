@@ -44,13 +44,17 @@ nav ul{
     list-style: none;
 }
 
+.nav-menu {
+    display: none;
+}
+
 #navbar li, a{
     padding: 5vh 2vh 5vh 2vh;
     text-decoration: none;
     color: black;
     transition: 0.3s;
 }
-#navbar a:hover {
+#navbar .nav-a a:hover {
     color: #fff;
     background-color: #454545;
 }
@@ -145,4 +149,13 @@ p {
 .cards a img{
     height: 26px;
     margin-bottom: -7px;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .nav-menu{
+        display: block;
+    }
 }
