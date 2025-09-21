@@ -7,18 +7,16 @@
 }
 
 body {
-    background: #bdc3c7;
-    background: -webkit-linear-gradient(to left, #2c3e70, #bdc3c7);
-    background: linear-gradient(to left, #2c3e70, #bdc3c7);
+    background: #201533;
     height: 300vh;
-    color: white;
+    color: #ffffff;
 }
 
 header {
     width: 100%;
     height: fit-content;
     margin: 0;
-    background-color: #e5e5e5;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -51,12 +49,13 @@ nav ul{
 #navbar li, a{
     padding: 5vh 2vh 5vh 2vh;
     text-decoration: none;
-    color: black;
+    font-weight: bolder;
+    color: #201533;
     transition: 0.3s;
 }
 #navbar .nav-a a:hover {
-    color: #fff;
-    background-color: #454545;
+    color: #ffffff;
+    background-color: #201533;
 }
 
 #sidebar {
@@ -68,7 +67,7 @@ nav ul{
     height: 100%;
     width: 65%;
     z-index: 10;
-    background-color: #e5e5e5a3;
+    background-color: #ffffffe3;
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px #0000002f;
     flex-direction: column;
@@ -85,14 +84,14 @@ nav ul{
 #sidebar a {
     width: 100%;
     text-decoration: none;
-    color: black;
+    color: #201533;
     padding: 5vh 100% 5vh 5vh;
     transition: 0.3s;
 }
 
 #sidebar a:hover {
-    color: #fff;
-    background-color: #454545;
+    color: #ffffff;
+    background-color: #201533;
 }
 
 .main-container {
@@ -128,8 +127,8 @@ p {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #3030309f;
-    outline: 3px solid #e5e5e5;
+    background-color: #252446;
+    outline: 3px solid #ffffff;
     margin: 3vh;
     height: fit-content;
     width: fit-content;
@@ -151,7 +150,31 @@ p {
     margin-bottom: -7px;
 }
 
+footer {
+    display: flex;
+    background-color: #ffffff;
+    color: #201533;
+    padding: 1vh;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    height: 5vh;
+}
+
+@media(max-width: 1280px) {
+    #logoDoTime img {
+        scale: 0.75;
+    }
+}
+
 @media(max-width: 800px) {
+
+    #logoDoTime img {
+        scale: 0.5;
+    }
+
     .hideOnMobile {
         display: none;
     }
