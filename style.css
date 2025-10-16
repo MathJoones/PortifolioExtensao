@@ -8,7 +8,7 @@
 
 body {
     background: #201533;
-    height: 300vh;
+    height: fit-content;
     color: #ffffff;
 }
 
