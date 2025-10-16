@@ -109,10 +109,6 @@ p {
     max-width: 860px;
 }
 
-#introducao {
-    margin: 5vh 0 10vh 0;
-}
-
 #membros {
     width: 95%;
     display: flex;
@@ -155,12 +151,37 @@ footer {
     background-color: #ffffff;
     color: #201533;
     padding: 1vh;
+    margin-top: 5vh;
     align-items: center;
     justify-content: center;
 }
 
 footer img {
     height: 5vh;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #1e579c;
+  cursor: pointer;
+  padding: 15px 25px;
+  border-radius: 15px;
+  font-size: 32px;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: #0ce6f2;
+}
+
+#goBackBtn {
+  display: none;
+  position: fixed;
+  bottom: 8vh;
+  right: 3vh;
+  z-index: 99;
 }
 
 @media(max-width: 1280px) {
