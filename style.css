@@ -184,6 +184,42 @@ button:hover {
   z-index: 99;
 }
 
+#telas {
+    position: relative;
+    width: clamp(100vh, 80%, 170vh);
+    height: clamp(70vh, 80%, 120vh);
+    margin: auto;
+    border-radius: 100px;
+    padding: 90px;
+}
+
+#telas img {
+    size: 75%;
+}
+
+#telas button {
+    position: absolute;
+    top: 45%;
+}
+
+.btnPrev {
+    left: 1em;
+}
+
+.btnNext {
+    right: 1em;
+}
+
+.slides li {
+    list-style: none;
+    display: none;
+}
+
+.slides li.displaySlide {
+    display: block;
+    animation: fade 1s;
+}
+
 @media(max-width: 1280px) {
     #logoDoJogo img {
         scale: 0.75;
