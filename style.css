@@ -186,15 +186,7 @@ button:hover {
 
 #telas {
     position: relative;
-    width: clamp(100vh, 80%, 170vh);
-    height: clamp(70vh, 80%, 120vh);
-    margin: auto;
     border-radius: 100px;
-    padding: 90px;
-}
-
-#telas img {
-    size: 75%;
 }
 
 #telas button {
@@ -219,6 +211,12 @@ button:hover {
     display: block;
     animation: fade 1s;
 }
+
+.slides li.displaySlide img{
+    width: 50%;
+    height: auto;
+}
+
 
 @media(max-width: 1280px) {
     #logoDoJogo img {
