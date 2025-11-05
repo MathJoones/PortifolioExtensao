@@ -166,7 +166,7 @@ button {
   color: #fff;
   background-color: #1e579c;
   cursor: pointer;
-  padding: 15px 25px;
+  padding: 1.5vh 2.5vh;
   border-radius: 15px;
   font-size: 32px;
   transition: 0.5s;
@@ -209,11 +209,12 @@ button:hover {
 
 .slides li.displaySlide {
     display: block;
+    margin-left: -5vh;
     animation: fade 1s;
 }
 
-.slides li.displaySlide img{
-    width: 50%;
+.slides li.displaySlide img, #prototipos img{
+    width: 60%;
     height: auto;
 }
 
